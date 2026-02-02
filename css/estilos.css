@@ -1,0 +1,53 @@
+@import url(header.css);
+@import url(slider.css);
+@import url(inicio.css);
+@import url(productos_listado.css);
+@import url(footer.css);
+
+/*Font header*/
+@font-face {
+  font-family: "Gothic";
+  src: url("../font/Tarocco.woff") format("woff");
+}
+@font-face {
+  font-family: "Jane";
+  src: url("../font/JaneLightRegular.woff") format("woff");
+}
+/*Font Slide*/
+@font-face {
+  font-family: "TestRegular";
+  src: url("../font/AllrounderAntiquaTest-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "ExpoRegular";
+  src: url("../font/Muli-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "TestBold";
+  src: url("../font/AllrounderAntiquaTest-BoldItalic.woff") format("woff");
+}
+/*Font Footer*/
+@font-face {
+  font-family: "ParisLPA";
+  src: url("../font/FeniceStd-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "BodoniMT";
+  src: url("../font/BodoniMT.woff") format("woff");
+}
+@font-face {
+  font-family: "Laika";
+  src: url("../font/DidotRoman.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  user-select: none;
+  overflow-x: hidden;
+}

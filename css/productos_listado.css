@@ -1,0 +1,272 @@
+/*Modo dispositivo*/
+
+/*background*/
+.background_productos {
+  /*background-image: url(../images/productos/dotacion/background1.jpg);
+  background-attachment: fixed;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 150);
+}
+
+.background_productos::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url(../images/productos/dotacion/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background_proteccion::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url(../images/productos/proteccion/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background_extintores::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url(../images/productos/extintores/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background_bordados::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url(../images/productos/bordados/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.degradadobanner {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.568), rgb(0, 0, 0));
+  height: 100%;
+}
+
+/*Texto background*/
+.txt_background_productos {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  bottom: 40%;
+}
+
+.txt_background_productos .titulo1_background_productos {
+  font-family: TestRegular;
+  font-size: 35px;
+  width: 290px;
+  margin-left: 6%;
+  line-height: 0.9;
+}
+
+.txt_background_productos .titulo2_background_productos {
+  font-family: TestRegular;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-left: 6%;
+}
+
+.txt_background_productos p {
+  font-family: ExpoRegular;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  padding: 0;
+  color: white;
+  margin-top: 30px;
+  width: 90%;
+  margin-left: 6%;
+}
+
+/*Arreglo galeria Productos*/
+.background_categorias_dotacion {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.2)),
+    url(../images/productos/dotacion/background_productos_dotacion.jpg);
+}
+
+.background_categorias_proteccion {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.2)),
+    url(../images/productos/proteccion/background_productos_proteccion.jpg);
+}
+
+.background_categorias_extintores {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.2)),
+    url(../images/productos/extintores/background_productos_extintores.jpg);
+}
+
+.background_categorias_bordados {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.2)),
+    url(../images/productos/bordados/background_productos_bordados.jpg);
+}
+
+.categorias_productos .background_categorias .contenedor_categorias {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.categorias_productos
+  .background_categorias
+  .contenedor_categorias
+  .contenedor_imagenes_categorias
+  .imagenes_categorias {
+  width: 310px;
+  height: 450px;
+}
+
+.categorias_productos
+  .background_categorias
+  .contenedor_categorias
+  .contenedor_imagenes_categorias
+  .imagenes_categorias
+  img {
+  border-radius: 40px;
+}
+
+/*Dispositivos pequeños*/
+@media (max-width: 312px) {
+  /*Background*/
+  .background_productos {
+    min-width: 270px;
+  }
+
+  /*Texto Background*/
+  .txt_background_productos {
+    width: 270px;
+    top: 50%;
+  }
+
+  .txt_background_productos h2 {
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .txt_background_productos .titulo1_background_productos {
+    width: 240px;
+  }
+
+  .txt_background_productos .titulo2_background_productos {
+    font-size: 12px;
+    letter-spacing: 0.2px;
+  }
+
+  .txt_background_productos p {
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    width: 90%;
+  }
+}
+
+/*Modo Pc*/
+@media (min-width: 1400px) {
+  /*Background*/
+  .background_productos {
+    max-width: 1920px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  /*Background*/
+  .background_dotacion::before,
+  .background_proteccion::before,
+  .background_extintores::before,
+  .background_bordados::before {
+  display: none;
+  }
+  
+  .background_productos {
+    background-image: url(../images/productos/dotacion/background.jpg);
+    background-attachment: fixed;
+  }
+
+  .background_proteccion {
+    background-image: url(../images/productos/proteccion/background.jpg);
+  }
+
+  .background_extintores {
+    background-image: url(../images/productos/extintores/background.jpg);
+  }
+
+  .background_bordados {
+    background-image: url(../images/productos/bordados/background.jpg);
+  }
+  
+  /*texto Background*/
+  .txt_background_productos {
+    display: flex;
+    flex-direction: column;
+    max-width: 740px;
+    left: 4%;
+    bottom: 50%;
+    height: auto;
+  }
+
+  .txt_background_productos .titulo1_background_productos {
+    font-size: 57px;
+    width: 100%;
+    line-height: 0.6;
+  }
+
+  .txt_background_productos .titulo2_background_productos {
+    font-size: 22px;
+    letter-spacing: 1.2px;
+    width: 100%;
+  }
+
+  .txt_background_productos p {
+    margin-top: 50px;
+    font-size: 18px;
+    max-width: 680px;
+    letter-spacing: 0.7px;
+  }
+
+  /*Arreglo Productos*/
+  .categorias_productos .background_categorias .contenedor_categorias {
+    margin-top: 200px;
+    margin-bottom: 150px;
+  }
+
+  .categorias_productos
+    .background_categorias
+    .contenedor_categorias
+    .contenedor_imagenes_categorias
+    .imagenes_categorias {
+    width: 510px;
+    height: 700px;
+  }
+}
